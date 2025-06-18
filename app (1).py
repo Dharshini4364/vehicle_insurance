@@ -27,6 +27,7 @@ except FileNotFoundError:
     st.stop()
 
 # User Inputs
+vehicle_id = st.text_input("🆔 Enter Vehicle ID")
 driving_license_input = st.selectbox("🪪 Do you have a Driving License?", ["Yes", "No"])
 driving_license = 1 if driving_license_input == "Yes" else 0
 
